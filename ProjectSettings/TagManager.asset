@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ball
+  - Vanisher
+  - ballB
+  - ballA
+  - vasoA
+  - vasoB
   layers:
   - Default
   - TransparentFX
