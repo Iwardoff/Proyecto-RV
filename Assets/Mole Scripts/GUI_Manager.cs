@@ -17,6 +17,10 @@ public class GUI_Manager : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void MenuP(string nombredeescena)
+    {
+        SceneManager.LoadScene(3);
+    }
 
     // Update is called once per frame
     void Update()

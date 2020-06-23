@@ -42,7 +42,7 @@ public class GameManager_Script : MonoBehaviour {
 
         // controls
         // mouse
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit = new RaycastHit();
@@ -54,11 +54,12 @@ public class GameManager_Script : MonoBehaviour {
                     if (m.ReturnMolePrefab().activeSelf && m.ReturnMolePrefab() == hit.transform.gameObject)
                     {
                         MoleHit(m);
+                        MoleHit2(m);
                     }
                 }
             }
         }
-        #endif
+#endif
 
         // touch
         if (Input.touchCount > 0)
@@ -74,6 +75,7 @@ public class GameManager_Script : MonoBehaviour {
                         if (m.ReturnMolePrefab().activeSelf && m.ReturnMolePrefab() == hit.transform.gameObject)
                         {
                             MoleHit(m);
+                            MoleHit2(m);
                         }
                     }
                 }
@@ -152,17 +154,26 @@ public class GameManager_Script : MonoBehaviour {
 
     private void MoleHit(Mole_Script m)
     {
+        
        Score_Script.Score += m.Whacked() ? 0 : 10; // only add score if mole isnt "whacked"
-        m.Whack();
-     /*   Score2_Script.Score += m.Whacked() ? 0 : 10; // only add score if mole isnt "whacked"
-        m.Whack();
+        
+        Score2_Script.Score += m.Whacked() ? 0 : 10; // only add score if mole isnt "whacked"
+        
         Score3_Script.Score3 += m.Whacked() ? 0 : 10; // only add score if mole isnt "whacked"
-        m.Whack();*/
+        m.Whack();
+    }
+    private void MoleHit2(Mole_Script m)
+    {
+
+        Score2_Script.Score += m.Whacked() ? 0 : 10; // only add score if mole isnt "whacked"
+        m.Whack();
+     
     }
 
     public void AddMole(GameObject moleUnit)
     {
         moleList.Add(moleUnit.GetComponent<Mole_Script>());
     }
+  
 
 }
