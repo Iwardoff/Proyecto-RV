@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - "Ca\xF1a_Amarilla"
+  - "Ca\xF1a_Verde"
+  - "Ca\xF1a_Roja"
+  - Pez_Amarillo
+  - Pez_Rojo
+  - PezV
   layers:
   - Default
   - TransparentFX
