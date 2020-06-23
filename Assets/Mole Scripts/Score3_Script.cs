@@ -43,5 +43,6 @@ public class Score3_Script : MonoBehaviour
         Puntaje3.text = "Puntaje 3: " + score3.ToString();
 
 
+
     }
 }
