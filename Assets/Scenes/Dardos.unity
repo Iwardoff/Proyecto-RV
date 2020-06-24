@@ -601,7 +601,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252570140}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2520985fa4ae7d34ab4d08b88332d8a9, type: 3}
   m_Name: 
@@ -618,7 +618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3bd92ff616c4042a857bc5ec5dca61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Puntaje: 20
+  puntos: {fileID: 1305461765}
+  dardo1: {fileID: 1639370355}
 --- !u!1 &326910346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1221,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1401684074}
+  - {fileID: 1621487903}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1384,7 +1385,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305461762}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14670b1328d1ed743b5b21d5b1d19b63, type: 3}
   m_Name: 
@@ -1398,7 +1399,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305461762}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d9ca6ae3cabce54aaeae89f99f8ca3e, type: 3}
   m_Name: 
@@ -1500,34 +1501,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!21 &1401684074
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'DianaMaterial
-
-    55246'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 64167cf24a6e4b0cb19d2fb9fc5c3657, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1452073319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +1680,34 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!21 &1621487903
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'DianaMaterial
+
+    14970'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 64167cf24a6e4b0cb19d2fb9fc5c3657, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1639370355 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 517235888103670602, guid: 15ccd9d44629eb549ac2870b09855c34,
@@ -1823,6 +1824,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1639370358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639370355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3bd92ff616c4042a857bc5ec5dca61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntos: {fileID: 1305461765}
+  dardo1: {fileID: 1639370355}
 --- !u!1001 &2065733171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2428,7 +2443,7 @@ PrefabInstance:
     - target: {fileID: 2685302941921552162, guid: 2e9784173516eef44a2dfd1a4201d26a,
         type: 3}
       propertyPath: m_TagString
-      value: Diana
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2875474277546332032, guid: 2e9784173516eef44a2dfd1a4201d26a,
         type: 3}
