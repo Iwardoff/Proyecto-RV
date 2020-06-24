@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class diana : MonoBehaviour
 {
-    public puntosintento2 puntos;
+    
     public GameObject dardo1;
 
      void Start()
@@ -13,9 +13,10 @@ public class diana : MonoBehaviour
         dardo1 = GameObject.Find("Dardo");
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider Diana)
     {
-        if(collision.gameObject.tag == "20")
+      
+        if (Diana.tag=="Player")
         {
             puntosintento2.score += 20;
         }
