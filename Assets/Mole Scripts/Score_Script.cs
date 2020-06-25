@@ -29,6 +29,7 @@ public class Score_Script : MonoBehaviour {
     // Use this for initialization
     void Start () {
         score1 = 0;
+        PlayerPrefs.SetInt("Puntaje1", score1);
     }
 
     void OnDestroy()

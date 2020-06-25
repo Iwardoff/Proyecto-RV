@@ -28,6 +28,7 @@ public class Score3_Script : MonoBehaviour
     void Start()
     {
         score3 = 0;
+        PlayerPrefs.SetInt("Puntaje3", score3);
     }
 
     void OnDestroy()

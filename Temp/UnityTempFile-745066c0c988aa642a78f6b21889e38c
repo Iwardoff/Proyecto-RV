@@ -292,6 +292,8 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 "Assets\Fishing Scripts\Destroy.cs"
+"Assets\Fishing Scripts\Destroy2.cs"
+"Assets\Fishing Scripts\Destroy3.cs"
 "Assets\Fishing Scripts\Drag.cs"
 "Assets\Fishing Scripts\Drag1.cs"
 "Assets\Fishing Scripts\GUIManager.cs"
@@ -299,6 +301,8 @@
 "Assets\Menu Script\Menu_Principal.cs"
 "Assets\Mole Scripts\GUI_Manager.cs"
 "Assets\Mole Scripts\GameManager_Script.cs"
+"Assets\Mole Scripts\LoadScore.cs"
+"Assets\Mole Scripts\LoadScoreF.cs"
 "Assets\Mole Scripts\Mole_Script.cs"
 "Assets\Mole Scripts\Score2_Script.cs"
 "Assets\Mole Scripts\Score3_Script.cs"

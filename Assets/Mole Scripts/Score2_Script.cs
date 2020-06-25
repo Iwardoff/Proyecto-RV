@@ -30,6 +30,7 @@ public class Score2_Script : MonoBehaviour
     void Start()
     {
         score2 = 0;
+        PlayerPrefs.SetInt("Puntaje2", score2);
     }
 
     void OnDestroy()
