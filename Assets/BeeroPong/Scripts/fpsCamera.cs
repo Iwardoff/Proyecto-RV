@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class fpsCamera : MonoBehaviour
 {
-    public Camera FPSCam;
+    public GameObject FPSCam;
 
     public float velHor;
     public float velVer;

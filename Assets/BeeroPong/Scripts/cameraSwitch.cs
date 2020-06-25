@@ -40,7 +40,7 @@ public class cameraSwitch : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.LeftAlt) || Input.GetKeyDown(KeyCode.RightAlt))
         {
-            //cameraChangeCounter();
+            cameraChangeCounter();
         }
     }
 
@@ -50,6 +50,15 @@ public class cameraSwitch : MonoBehaviour {
         int cameraPositionCounter = PlayerPrefs.GetInt("CameraPosition");
         cameraPositionCounter++;
         cameraPositionChange(cameraPositionCounter);
+        if(cameraPositionCounter == 0){
+           cameraTwo.SetActive(false); 
+           cameraOne.SetActive(true);
+        }
+        
+        if(cameraPositionCounter == 1){
+           cameraOne.SetActive(false);
+           cameraTwo.SetActive(false);  
+        }
     }
 
     //Camera change Logic

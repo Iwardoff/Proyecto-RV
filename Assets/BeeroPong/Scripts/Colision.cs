@@ -8,7 +8,6 @@ public class Colision : MonoBehaviour
     public GameObject vaso;
     Collider collider;
     public adminPuntos Player;
-    public adminPuntos Oponente;
 
     
     
@@ -28,24 +27,16 @@ public class Colision : MonoBehaviour
         void OnTriggerEnter(Collider collider)
     {
 
-        if(collider.gameObject.tag == "ballA" && vaso.gameObject.tag == "vasoB"||collider.gameObject.tag == "ballB" && vaso.gameObject.tag == "vasoA"){
-            Player.Puntaje = Player.Puntaje + 1;
-            Oponente.vasosRestantes--;
+        if((collider.gameObject.tag == "ballA" && vaso.gameObject.tag == "vasoB")||(collider.gameObject.tag == "ballB" && vaso.gameObject.tag == "vasoA")){
+            adminPuntos.PuntajeRef += 1;
             Debug.Log("funciona el metodo");
             Destroy(gameObject, .10f); //Cubo 
             Destroy(vaso, .10f); //Vaso
             Destroy(collider.gameObject, .10f); //Bola
             Debug.Log("colision con activador");
+            
         }
-        if(collider.gameObject.tag == "ballA" && vaso.gameObject.tag == "vasoA"||collider.gameObject.tag == "ballB" && vaso.gameObject.tag == "vasoB"){
-            Oponente.Puntaje++;
-            Player.vasosRestantes--;
-            Debug.Log("funciona el metodo");
-            Destroy(gameObject, .10f); //Cubo 
-            Destroy(vaso, .10f); //Vaso
-            Destroy(collider.gameObject, .10f); //Bola
-            Debug.Log("colision con activador");
-        }
+ 
         
     }
 }

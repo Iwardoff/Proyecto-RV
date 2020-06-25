@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class adminPuntos : MonoBehaviour
 {
-    public int vasosRestantes = 6;
+    
     public string scoreText = "Puntaje:";
-    public string vidasText = "Vasos Restantes:";
 
     public Text textScore;
-    public Text textVidas;
     public static adminPuntos admnPuntos;
-    public int Puntaje;
+    public  int Puntaje;
+    public static int PuntajeRef = 0;
+    public Timer timer;
 
     void Awake(){
         admnPuntos = this;
+        DontDestroyOnLoad(gameObject);
     }
     // Start is called before the first frame update
     void Start()
@@ -26,17 +28,17 @@ public class adminPuntos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+ 
         if(textScore != null)
         {
-            textScore.text = scoreText + Puntaje.ToString();
-            textVidas.text = vidasText + vasosRestantes.ToString();
+            textScore.text = scoreText + PuntajeRef.ToString();
         }
 
-        if(Puntaje == 6){
+        if(adminPuntos.PuntajeRef >=6||timer.GetComponent<tiempo>() == 0){
+        SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);}
             
         }
 
     }
 
-}
+

@@ -10,6 +10,7 @@ TagManager:
   - ballA
   - vasoA
   - vasoB
+  - vaso100
   layers:
   - Default
   - TransparentFX

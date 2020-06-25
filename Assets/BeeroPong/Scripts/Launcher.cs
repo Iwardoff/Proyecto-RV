@@ -17,11 +17,12 @@ public class Launcher : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-         if (Input.GetMouseButtonDown(0) && puedeLanzar == true){ //detecta el botón 1 del mouse y si puede lanzar
+        if(Input.GetMouseButtonDown(0) && puedeLanzar == true){ //detecta el botón 1 del mouse y si puede lanzar
              Debug.Log("Pressed primary button.");
              GameObject bullet = Instantiate(proyectilPrefab, transform.position, Quaternion.identity) as GameObject; //instancia el objeto que definimos como proyectil
-             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 2500); //al instanciar ese objeto, le mete fuerza
+             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 3500); //al instanciar ese objeto, le mete fuerza
          }
+
+
     }
 }
