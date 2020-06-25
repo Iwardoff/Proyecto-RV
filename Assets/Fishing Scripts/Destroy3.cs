@@ -40,13 +40,13 @@ public class Destroy3 : MonoBehaviour
     }
     void OnDestroy()
     {
-        PlayerPrefs.SetInt("Puntaje 3", score3);
+        PlayerPrefs.SetInt("PuntajeR", score3);
         PlayerPrefs.Save();
 
     }
     void Update()
     {
-        Puntaje.text = "Puntaje 3: " + score3.ToString();
+        Puntaje.text = "Puntaje R: " + score3.ToString();
     }
 
 

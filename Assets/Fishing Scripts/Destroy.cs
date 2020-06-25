@@ -13,6 +13,7 @@ public class Destroy : MonoBehaviour
     void Start()
     {
         score = 0;
+        PlayerPrefs.SetInt("PuntajeV", score);
     }
 
     void OnTriggerEnter(Collider collision)
@@ -40,13 +41,13 @@ public class Destroy : MonoBehaviour
     }
     void OnDestroy()
     {
-        PlayerPrefs.SetInt("Puntaje 1", score);
+        PlayerPrefs.SetInt("PuntajeV", score);
         PlayerPrefs.Save();
 
     }
     void Update()
     {
-        Puntaje.text = "Puntaje 1: " + score.ToString();
+        Puntaje.text = "Puntaje V: " + score.ToString();
     }
 
 
