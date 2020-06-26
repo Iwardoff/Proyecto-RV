@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class lanzardardo : MonoBehaviour
     public Rigidbody dardoPrefab;
     public Transform lanzador;
     public float VelDisparo;
+    public Boolean detector;
     //public float tiempoDisparo;
    // public float inicioDisparo;
     
@@ -24,9 +26,24 @@ public class lanzardardo : MonoBehaviour
             dardoPrefabInstanc = Instantiate(dardoPrefab, lanzador.position,
                 Quaternion.identity) as Rigidbody;
             dardoPrefabInstanc.AddForce(lanzador.forward * 100 * VelDisparo);
-           
+
+           /* if (detector == true)
+            {
+                dardoPrefab = Instantiate(dardoPrefab) as Rigidbody;
+            }*/
 
         }
+         
         
     }
+    private void OnMouseClicDown()
+    {
+        if(detector == true)
+        {
+            dardoPrefab = Instantiate(dardoPrefab) as Rigidbody;
+        }
+    }
+    
+       
+    
 }
