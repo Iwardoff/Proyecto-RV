@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Mole_1.unity
+    guid: aee4a956cb566f641afbb15be18ff4f6
+  - enabled: 1
+    path: Assets/Scenes/Mole_2.unity
+    guid: cab2be5d0a06b18438321cd83a0e04e5
+  - enabled: 1
+    path: Assets/Scenes/Mole_3.unity
+    guid: ea6959c63da36714a9ffaa00e73ef63d
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 7d73d57697cd9c647b71459fd0e61cdd
+  - enabled: 1
+    path: Assets/Scenes/Magic Fishing 1.unity
+    guid: 4870cdfd56480a645b8ad0ad1e13d50e
+  - enabled: 1
+    path: Assets/Scenes/Magic Fishing 2.unity
+    guid: e2cc34a01da1ba04d93fb10223ba0dee
+  - enabled: 1
+    path: Assets/Scenes/Magic Fishing 3.unity
+    guid: dee8f37372b1adb46adf24837e3a3649
   m_configObjects: {}
